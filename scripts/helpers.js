@@ -45,4 +45,13 @@ function updateJobs() {
         }
     }
 }
+updateJobs();
+let cards = document.querySelectorAll(".jcard");
+for (let i = 0; i < cards.length; i++) {
+    cards[i].inInterview = false;
+    cards[i].inRejected = false;
+}
 
+
+let interBtn = document.querySelectorAll(".btn-success");
+let rejecBtn = document.querySelectorAll(".btn-error");
